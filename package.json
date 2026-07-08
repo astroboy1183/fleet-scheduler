@@ -1,0 +1,9 @@
+{
+  "name": "fleet-scheduler",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  }
+}

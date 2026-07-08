@@ -1,0 +1,16 @@
+{
+  // fleet-scheduler: dispatches the agent fleet's workflows at their exact
+  // minutes (see worker.js). Free plan is plenty: one tick per minute.
+  "name": "fleet-scheduler",
+  "main": "worker.js",
+  "compatibility_date": "2026-07-09",
+  "triggers": {
+    // One tick every minute; worker.js matches the schedule table against
+    // the tick's UTC hh:mm. Simpler and more legible than juggling per-time
+    // cron expressions against Cloudflare's per-worker trigger limit.
+    "crons": ["* * * * *"]
+  },
+  "observability": {
+    "enabled": true
+  }
+}
