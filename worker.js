@@ -45,7 +45,10 @@ async function dispatch(env, entry) {
     },
     // source=scheduler lets the workflow guards tell this dispatch apart
     // from a human clicking "Run workflow" (humans always proceed).
-    body: JSON.stringify({ ref: "main", inputs: { source: "scheduler" } }),
+    body: JSON.stringify(
+      entry.manual ? { ref: "main" }
+                   : { ref: "main", inputs: { source: "scheduler" } },
+    ),
   });
   if (!resp.ok) {
     throw new Error(`${entry.repo}: HTTP ${resp.status} ${await resp.text()}`);
