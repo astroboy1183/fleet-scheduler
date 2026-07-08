@@ -3,7 +3,9 @@
   // minutes (see worker.js). Free plan is plenty: one tick per minute.
   "name": "fleet-scheduler",
   "main": "worker.js",
-  "compatibility_date": "2026-07-09",
+  // scheduled-only worker: no fetch handler, so no public URL
+  "workers_dev": false,
+  "compatibility_date": "2026-07-08",
   "triggers": {
     // One tick every minute; worker.js matches the schedule table against
     // the tick's UTC hh:mm. Simpler and more legible than juggling per-time
