@@ -18,7 +18,7 @@ const OWNER = "astroboy1183";
 const SCHEDULE = [
   { utc: "00:30", repo: "weather-report", workflow: "weather-report.yml" },   // 06:00 IST
   { utc: "00:37", repo: "mail-digest", workflow: "mail-digest.yml" },         // 06:07 IST
-  { utc: "00:43", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:13 IST
+  { utc: "00:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:00 IST
   { utc: "00:47", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:17 IST
   { utc: "01:29", repo: "tech-news", workflow: "tech-news.yml" },             // 06:59 IST
   { utc: "02:03", repo: "markets-brief", workflow: "markets-brief.yml" },     // 07:33 IST
