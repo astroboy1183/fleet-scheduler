@@ -16,7 +16,7 @@ const OWNER = "astroboy1183";
 // UTC schedule. dow: 0=Sun … 6=Sat (UTC weekday); omitted = daily.
 // IST = UTC+5:30 — the comments carry the IST time the fleet reasons in.
 const SCHEDULE = [
-  { utc: "00:33", repo: "weather-report", workflow: "weather-report.yml" },   // 06:03 IST
+  { utc: "00:30", repo: "weather-report", workflow: "weather-report.yml" },   // 06:00 IST
   { utc: "00:37", repo: "mail-digest", workflow: "mail-digest.yml" },         // 06:07 IST
   { utc: "00:43", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:13 IST
   { utc: "00:47", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:17 IST
