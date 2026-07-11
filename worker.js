@@ -29,6 +29,7 @@ const SCHEDULE = [
   { utc: "13:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 19:00 IST evening sweep (silent unless can't-wait mail)
   { utc: "15:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 21:00 IST evening wrap (silent unless news broke since morning)
   { utc: "13:37", repo: "eng-blogs", workflow: "eng-blogs.yml" },             // 19:07 IST
+  { utc: "13:45", repo: "tech-news", workflow: "tech-news.yml" },             // 19:15 IST evening wrap (silent unless tech broke since morning)
   { utc: "14:07", repo: "repo-review", workflow: "repo-review.yml" },         // 19:37 IST
   { utc: "08:07", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 13:37 IST lunch edition (silent unless India is on the board)
   { utc: "16:17", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 21:47 IST evening edition
