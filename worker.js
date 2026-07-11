@@ -15,20 +15,22 @@ const OWNER = "astroboy1183";
 
 // UTC schedule. dow: 0=Sun … 6=Sat (UTC weekday); omitted = daily.
 // IST = UTC+5:30 — the comments carry the IST time the fleet reasons in.
-const SCHEDULE = [
+export const SCHEDULE = [
+  // ── the 06:00 IST fleet — one tick carries them all ──────────────────
   { utc: "00:30", repo: "weather-report", workflow: "weather-report.yml" },   // 06:00 IST
   { utc: "00:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 06:00 IST
   { utc: "00:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:00 IST
   { utc: "00:30", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:00 IST
   { utc: "00:30", repo: "tech-news", workflow: "tech-news.yml" },             // 06:00 IST
   { utc: "00:30", repo: "finance-tracker", workflow: "finance-tracker.yml" }, // 06:00 IST
-  { utc: "00:30", repo: "papers-digest", workflow: "papers-digest.yml", dow: 6 }, // Sat 06:00 IST
-  { utc: "13:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 19:00 IST evening sweep (silent unless can't-wait mail)
-  { utc: "15:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 21:00 IST evening wrap (silent unless news broke since morning)
   { utc: "00:30", repo: "eng-blogs", workflow: "eng-blogs.yml" },             // 06:00 IST
-  { utc: "13:45", repo: "tech-news", workflow: "tech-news.yml" },             // 19:15 IST evening wrap (silent unless tech broke since morning)
   { utc: "00:30", repo: "repo-review", workflow: "repo-review.yml" },         // 06:00 IST
-  { utc: "08:07", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 13:37 IST lunch edition (silent unless India is on the board)
+  { utc: "00:30", repo: "papers-digest", workflow: "papers-digest.yml", dow: 6 }, // Sat 06:00 IST
+  // ── conditional extra editions (silent unless they have something) ───
+  { utc: "08:07", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 13:37 IST lunch (India match days only)
+  { utc: "13:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 19:00 IST sweep (can't-wait mail only)
+  { utc: "13:45", repo: "tech-news", workflow: "tech-news.yml" },             // 19:15 IST wrap (new since morning; new exploited CVEs always)
+  { utc: "15:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 21:00 IST wrap (new since morning)
   { utc: "16:17", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 21:47 IST evening edition
 ];
 

@@ -51,4 +51,5 @@ log lists what was due and dispatched; the agent's Actions page shows a
 
 Edit `SCHEDULE` in `worker.js` (UTC, with the IST time in the comment),
 `npx wrangler deploy`. Keep the agent's own workflow cron as the backup
-and the daily-review watchdog's roster in sync.
+and the housekeeper watchdog's roster (CLOUD_AGENTS in
+`housekeeper/housekeeper.py`) in sync.
