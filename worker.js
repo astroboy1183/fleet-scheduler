@@ -21,7 +21,6 @@ const SCHEDULE = [
   { utc: "00:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:00 IST
   { utc: "00:30", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:00 IST
   { utc: "00:30", repo: "tech-news", workflow: "tech-news.yml" },             // 06:00 IST
-  { utc: "00:30", repo: "study-coach", workflow: "study-coach.yml" },         // 06:00 IST
   { utc: "00:30", repo: "finance-tracker", workflow: "finance-tracker.yml" }, // 06:00 IST
   { utc: "00:30", repo: "papers-digest", workflow: "papers-digest.yml", dow: 6 }, // Sat 06:00 IST
   { utc: "13:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 19:00 IST evening sweep (silent unless can't-wait mail)
