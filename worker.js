@@ -17,20 +17,20 @@ const OWNER = "astroboy1183";
 // IST = UTC+5:30 — the comments carry the IST time the fleet reasons in.
 const SCHEDULE = [
   { utc: "00:30", repo: "weather-report", workflow: "weather-report.yml" },   // 06:00 IST
-  { utc: "00:37", repo: "mail-digest", workflow: "mail-digest.yml" },         // 06:07 IST
+  { utc: "00:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 06:00 IST
   { utc: "00:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:00 IST
-  { utc: "00:47", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:17 IST
-  { utc: "01:29", repo: "tech-news", workflow: "tech-news.yml" },             // 06:59 IST
-  { utc: "02:03", repo: "markets-brief", workflow: "markets-brief.yml" },     // 07:33 IST
-  { utc: "02:07", repo: "release-radar", workflow: "release-radar.yml", dow: 1 }, // Mon 07:37 IST
-  { utc: "02:37", repo: "study-coach", workflow: "study-coach.yml" },         // 08:07 IST
-  { utc: "03:01", repo: "finance-tracker", workflow: "finance-tracker.yml" }, // 08:31 IST
-  { utc: "03:37", repo: "papers-digest", workflow: "papers-digest.yml", dow: 6 }, // Sat 09:07 IST
+  { utc: "00:30", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:00 IST
+  { utc: "00:30", repo: "tech-news", workflow: "tech-news.yml" },             // 06:00 IST
+  { utc: "00:30", repo: "markets-brief", workflow: "markets-brief.yml" },     // 06:00 IST
+  { utc: "00:30", repo: "release-radar", workflow: "release-radar.yml", dow: 1 }, // Mon 06:00 IST
+  { utc: "00:30", repo: "study-coach", workflow: "study-coach.yml" },         // 06:00 IST
+  { utc: "00:30", repo: "finance-tracker", workflow: "finance-tracker.yml" }, // 06:00 IST
+  { utc: "00:30", repo: "papers-digest", workflow: "papers-digest.yml", dow: 6 }, // Sat 06:00 IST
   { utc: "13:30", repo: "mail-digest", workflow: "mail-digest.yml" },         // 19:00 IST evening sweep (silent unless can't-wait mail)
   { utc: "15:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 21:00 IST evening wrap (silent unless news broke since morning)
-  { utc: "13:37", repo: "eng-blogs", workflow: "eng-blogs.yml" },             // 19:07 IST
+  { utc: "00:30", repo: "eng-blogs", workflow: "eng-blogs.yml" },             // 06:00 IST
   { utc: "13:45", repo: "tech-news", workflow: "tech-news.yml" },             // 19:15 IST evening wrap (silent unless tech broke since morning)
-  { utc: "14:07", repo: "repo-review", workflow: "repo-review.yml" },         // 19:37 IST
+  { utc: "00:30", repo: "repo-review", workflow: "repo-review.yml" },         // 06:00 IST
   { utc: "08:07", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 13:37 IST lunch edition (silent unless India is on the board)
   { utc: "16:17", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 21:47 IST evening edition
 ];
