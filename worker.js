@@ -21,8 +21,6 @@ const SCHEDULE = [
   { utc: "00:30", repo: "news-briefing", workflow: "news-briefing.yml" },     // 06:00 IST
   { utc: "00:30", repo: "cricket-scores", workflow: "cricket-scores.yml" },   // 06:00 IST
   { utc: "00:30", repo: "tech-news", workflow: "tech-news.yml" },             // 06:00 IST
-  { utc: "00:30", repo: "markets-brief", workflow: "markets-brief.yml" },     // 06:00 IST
-  { utc: "00:30", repo: "release-radar", workflow: "release-radar.yml", dow: 1 }, // Mon 06:00 IST
   { utc: "00:30", repo: "study-coach", workflow: "study-coach.yml" },         // 06:00 IST
   { utc: "00:30", repo: "finance-tracker", workflow: "finance-tracker.yml" }, // 06:00 IST
   { utc: "00:30", repo: "papers-digest", workflow: "papers-digest.yml", dow: 6 }, // Sat 06:00 IST
